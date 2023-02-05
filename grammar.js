@@ -157,6 +157,7 @@ module.exports = grammar({
     keyword_like: _ => choice(make_keyword("like"),make_keyword("ilike")),
     keyword_similar: _ => make_keyword("similar"),
     keyword_preserve: _ => make_keyword("preserve"),
+    keyword_merge: _ => make_keyword("merge"),
 
     // Operators
     is_not: $ => prec.left(seq($.keyword_is, $.keyword_not)),
