@@ -5,9 +5,11 @@ name: Create Release
 on:
   push:
     branch:
-      - gh_release_build_experimenting
+      - gh_release_build_experimenting # TODO: remove after testing
+      - main
     tags:
-      - release_test
+      - release_test # TODO: remove after testing
+      - v[0-9]+.[0-9]+.[0-9]+
 
 jobs:
   build:
@@ -101,9 +103,6 @@ jobs:
           sha256sum tree-sitter-sql-macos_arm64.tar.gz > tree-sitter-sql-macos_arm64.tar.gz.sha256sum
           echo "SHA_MACOS_ARM64_TAR=$(cat tree-sitter-sql-macos_arm64.tar.gz.sha256sum)" >> $GITHUB_ENV
 
-      - name: Create release files
-        run: |
-          npm run release
 
   release_artifacts:
     needs: [prepare_artifacts]
