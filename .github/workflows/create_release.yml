@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    name: Build Code
+    name: Setup
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
