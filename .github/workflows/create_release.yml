@@ -103,17 +103,6 @@ jobs:
           sha256sum tree-sitter-sql-macos_arm64.tar.gz > tree-sitter-sql-macos_arm64.tar.gz.sha256sum
           echo "SHA_MACOS_ARM64_TAR=$(cat tree-sitter-sql-macos_arm64.tar.gz.sha256sum)" >> $GITHUB_ENV
 
-
-  release_artifacts:
-    needs: [prepare_artifacts]
-    runs-on: ubuntu-latest
-    env:
-      GH_REPO: ${{ github.repository }}
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    permissions:
-      contents: write
-
-    steps:
       - name: Publish release
         run: |
           echo $GITHUB_ENV
