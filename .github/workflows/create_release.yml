@@ -92,7 +92,6 @@ jobs:
           cd tree-sitter-sql-x86_64
           sha256sum tree-sitter-sql-x86_64.zip > tree-sitter-sql-x86_64.zip.sha256sum
           echo "SHA_LINUX_64_ZIP=$(cat tree-sitter-sql-x86_64.zip.sha256sum)" >> $GITHUB_ENV
-          cd tree-sitter-sql-x86_64
           sha256sum tree-sitter-sql-x86_64.tar.gz > tree-sitter-sql-x86_64.tar.gz.sha256sum
           echo "SHA_LINUX_64_TAR=$(cat tree-sitter-sql-x86_64.tar.gz.sha256sum)" >> $GITHUB_ENV
           sha256sum tree-sitter-sql-wasm.zip > tree-sitter-sql-wasm.zip.sha256sum
@@ -105,7 +104,6 @@ jobs:
           cd tree-sitter-sql-macos_arm64
           sha256sum tree-sitter-sql-macos_arm64.zip > tree-sitter-sql-macos_arm64.zip.sha256sum
           echo "SHA_MACOS_ARM64_ZIP=$(cat tree-sitter-sql-macos_arm64.zip.sha256sum)" >> $GITHUB_ENV
-          cd tree-sitter-sql-macos_arm64
           sha256sum tree-sitter-sql-macos_arm64.tar.gz > tree-sitter-sql-macos_arm64.tar.gz.sha256sum
           echo "SHA_MACOS_ARM64_TAR=$(cat tree-sitter-sql-macos_arm64.tar.gz.sha256sum)" >> $GITHUB_ENV
 
