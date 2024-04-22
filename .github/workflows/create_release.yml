@@ -52,7 +52,7 @@ jobs:
         npm run build
         zip -r tree-sitter-sql-${{ matrix.arch }}.zip src sql.so # TODO: add version name
         tar -czvf tree-sitter-sql-${{ matrix.arch }}.tar.gz src sql.so grammar.js # TODO: add version name
-        if [ "${{ matrix.os }}" == 'ubuntu-latest']; then
+        if [ "${{ matrix.os }}" == 'ubuntu-latest' ]; then
           npm run build-wasm
           zip -r tree-sitter-sql-wasm.zip src tree-sitter-sql.wasm
           tar -czvf tree-sitter-sql-wasm.tar.gz tree-sitter-sql.wasm
