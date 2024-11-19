@@ -110,6 +110,7 @@
   (keyword_primary)
   (keyword_delete)
   (keyword_create)
+  (keyword_show)
   (keyword_insert)
   (keyword_merge)
   (keyword_distinct)
@@ -267,6 +268,7 @@
   (keyword_out)
   (keyword_inout)
   (keyword_variadic)
+  (keyword_ordinality)
   (keyword_session)
   (keyword_isolation)
   (keyword_level)
@@ -315,6 +317,7 @@
   (keyword_plain)
   (keyword_storage)
   (keyword_compression)
+  (keyword_duplicate)
 ] @keyword
 
 [
