@@ -11221,6 +11221,10 @@
               {
                 "type": "SYMBOL",
                 "name": "function_support"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "function_set"
               }
             ]
           }
@@ -11269,6 +11273,10 @@
               {
                 "type": "SYMBOL",
                 "name": "function_support"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "function_set"
               }
             ]
           }
@@ -11992,6 +12000,61 @@
           },
           "named": true,
           "value": "literal"
+        }
+      ]
+    },
+    "function_set": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "keyword_set"
+        },
+        {
+          "type": "FIELD",
+          "name": "parameter",
+          "content": {
+            "type": "SYMBOL",
+            "name": "identifier"
+          }
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "keyword_to"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "literal"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "identifier"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "keyword_on"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "keyword_off"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "keyword_default"
+            }
+          ]
         }
       ]
     },
@@ -22187,6 +22250,9 @@
     ],
     [
       "timestamp"
+    ],
+    [
+      "create_function"
     ]
   ],
   "precedences": [

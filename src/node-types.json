@@ -4382,6 +4382,10 @@
           "named": true
         },
         {
+          "type": "function_set",
+          "named": true
+        },
+        {
           "type": "function_strictness",
           "named": true
         },
@@ -8246,6 +8250,56 @@
         },
         {
           "type": "keyword_security",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "function_set",
+    "named": true,
+    "fields": {
+      "parameter": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "keyword_default",
+          "named": true
+        },
+        {
+          "type": "keyword_off",
+          "named": true
+        },
+        {
+          "type": "keyword_on",
+          "named": true
+        },
+        {
+          "type": "keyword_set",
+          "named": true
+        },
+        {
+          "type": "keyword_to",
+          "named": true
+        },
+        {
+          "type": "literal",
           "named": true
         }
       ]
